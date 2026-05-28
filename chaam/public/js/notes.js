@@ -46,7 +46,7 @@ const getUserDetails=()=>{
         if(data.success){
              //console.log(data.success);
         }else{
-            window.location.href="../public/index.html"
+            window.location.href="/index.html"
         }
        
        
@@ -87,9 +87,9 @@ const updateNotes=()=>{
                 //console.log(data.success);
             if(data.success){
                 //profilePage(data);
-                window.location.href="../public/home.html"
+                window.location.href="/home.html"
             }else{
-                window.location.href="../public/index.html"
+                window.location.href="/index.html"
             }
        
        
@@ -112,9 +112,9 @@ const updateNotes=()=>{
         if(data.success){
              //console.log(data.success);
              
-             window.location.href="../public/home.html"
+             window.location.href="/home.html"
         }else{
-            window.location.href="../public/index.html"
+            window.location.href="/index.html"
         }
        
        

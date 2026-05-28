@@ -14,7 +14,7 @@ const otpVerify = async() => {
     const userDataID= localStorage.getItem("userid_signup_otp");
 
     if(!userDataID){
-        window.location.href = "../public/signup.html";
+        window.location.href = "/signup.html";
         return;
     }
     const {userid} = JSON.parse(userDataID);
@@ -178,7 +178,7 @@ const otpVerify = async() => {
                     if(data.success){
                         localStorage.removeItem("userid");
                         window.location.href =
-                        "../public/login.html";
+                        "/login.html";
 
                     }else{
 

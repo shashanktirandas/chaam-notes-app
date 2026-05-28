@@ -6,7 +6,7 @@ const register=()=>{
     auth_submit.addEventListener("click",async()=>{
             const userdata=localStorage.getItem("userdata");
             if(!userdata){
-                window.location.href="../public/signup.html";
+                window.location.href="/signup.html";
                 return;
             }
             const {username,email,password}=JSON.parse(userdata);
@@ -32,7 +32,7 @@ const register=()=>{
             .then((data) => {
                 //console.log(data);
                 if(data.success){
-                     window.location.href = "../public/login.html"
+                     window.location.href = "/login.html"
                 }
             });
         

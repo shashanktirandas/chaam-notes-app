@@ -19,7 +19,7 @@ const getUserDetails=()=>{
         if(data.success){
             profilePage(data);
         }else{
-            window.location.href="../public/index.html"
+            window.location.href="/index.html"
         }
        
        
@@ -98,9 +98,9 @@ const notes=()=>{
                 //console.log(data.success);
             if(data.success){
                 profilePage(data);
-                window.location.href="../public/home.html"
+                window.location.href="/home.html"
             }else{
-                window.location.href="../public/index.html"
+                window.location.href="/index.html"
             }
        
        
@@ -144,9 +144,9 @@ const notes=()=>{
     .then((data)=>{
         if(data.success){
            console.log(data);
-           window.location.href="../public/home.html"
+           window.location.href="/home.html"
         }else{
-            window.location.href="../public/index.html"
+            window.location.href="/index.html"
         }
        
      })
@@ -196,7 +196,7 @@ const notes=()=>{
      notes_block_main.addEventListener("click",()=>{
         localStorage.setItem("note",JSON.stringify(note));
         //console.log("notesssss :::: ",note);
-        window.location.href="../public/notes.html";
+        window.location.href="/notes.html";
     })
 
     notes_block.append(notes_block_main);
@@ -257,9 +257,9 @@ const getNotes=()=>{
                         }
                         localStorage.setItem("note",JSON.stringify(note));
                         //console.log(note);
-                    window.location.href="../public/home.html"
+                    window.location.href="/home.html"
                     }else{
-                        window.location.href="../public/index.html"
+                        window.location.href="/index.html"
                     }
                 
                 
@@ -267,7 +267,7 @@ const getNotes=()=>{
             }
             notes();
         }else{
-            window.location.href="../public/index.html"
+            window.location.href="/index.html"
         }
        
        
@@ -321,9 +321,9 @@ const notesAdd=()=>{
              }
              localStorage.setItem("note",JSON.stringify(note));
              //console.log(note);
-           window.location.href="../public/notes.html"
+           window.location.href="/notes.html"
         }else{
-            window.location.href="../public/index.html"
+            window.location.href="/index.html"
         }
        
        

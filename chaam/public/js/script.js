@@ -32,7 +32,7 @@ const splash=()=>{
   },2000)
   setTimeout(()=>{
     splash_space.style.display="none"
-    window.location.href = "../public/signup.html"
+    window.location.href = "/signup.html"
   },2100)
 }
 splash();

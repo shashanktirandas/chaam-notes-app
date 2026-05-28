@@ -54,7 +54,7 @@ const register=()=>{
                 //console.log(data);
                 if(data.success){
                     localStorage.setItem("token",data.data);
-                    window.location.href = "../public/home.html"
+                    window.location.href = "/home.html"
                 }
                 else{
                     if(data.field==="username"){
@@ -84,7 +84,7 @@ const register=()=>{
                                     localStorage.removeItem("userid");
                                     localStorage.setItem("userid_n", dataotp.userid);
                                     console.log(dataotp,dataotp.userid);
-                                    window.location.href ="../public/login_otp.html";
+                                    window.location.href ="/login_otp.html";
                                 }
                                 
                             })

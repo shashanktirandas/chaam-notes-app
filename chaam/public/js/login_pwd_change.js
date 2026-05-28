@@ -9,7 +9,7 @@ console.log("sdfghjk")
     const userid= localStorage.getItem("useridotp");
     console.log(userid)
     if(!userid){
-        window.location.href = "../public/login.html";
+        window.location.href = "/login.html";
         return;
     }
     // const userid = JSON.parse(userDataID);
@@ -85,7 +85,7 @@ console.log("sdfghjk")
 
                     localStorage.setItem("token", loginData.data);
 
-                    window.location.href = "../public/home.html";
+                    window.location.href = "/home.html";
 
                 }else{
 

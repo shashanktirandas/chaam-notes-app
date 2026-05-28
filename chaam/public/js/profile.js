@@ -2,7 +2,7 @@ const exit=()=>{
     const auth_submit=document.querySelector(".auth_submit");
     auth_submit.addEventListener("click",()=>{
         localStorage.setItem("token",null);
-        window.location.href = "../public/index.html"
+        window.location.href = "/index.html"
     })
 }
 exit();
@@ -30,7 +30,7 @@ const getUserDetails=async()=>{
         if(data.success){
             profilePage(data);
         }else{
-            window.location.href="../public/index.html"
+            window.location.href="/index.html"
         }
        
        

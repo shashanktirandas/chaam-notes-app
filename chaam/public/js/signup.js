@@ -82,10 +82,10 @@ const register=()=>{
                     // }))
 
                     // if(!userdata){
-                    //     window.location.href="../public/signup.html";
+                    //     window.location.href="signup.html";
                     //     return;
                     // }
-                     window.location.href = "../public/signup_otp.html"
+                     window.location.href = "/signup_otp.html"
                 }
                 else{
                     if(data.field==="username"){
