@@ -18,7 +18,9 @@ app.use("/api/auth",authRouter);
 app.use("/api/home",homeRouter);
 app.use("/api/admin",adminRouter);
 app.use("/api/notes",notesRouter);
-
+app.get("/", (req, res) => {
+    res.send("Chaam Notes Backend Running 🚀");
+});
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
 })
