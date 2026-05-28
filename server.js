@@ -12,7 +12,10 @@ const app = express();
 const PORT=process.env.PORT;
 connectToDB();
 
-app.use(cors());
+app.use(cors({
+    origin: "https://chaam-notes-app.vercel.app",
+    credentials: true
+}));
 app.use(express.json());
 app.use("/api/auth",authRouter);
 app.use("/api/home",homeRouter);
