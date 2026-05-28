@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+a,input,button,select,textarea{
+  all:unset;
+}
+
+.r_background{
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000000;
+  /* background-image: url('../img/splash.png'); */
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}   
+.background{
+  width: 100vw;
+  height: 100vh;
+  background-color: #95c2e711;
+  background-image: url('../img/background1.png');
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  background-position: center;
+}
+
+.splash_space{
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 100%;
+  transition: all 0.5s;
+}
+
+.splash_main{
+  margin-bottom: 12vh;
+  min-width: 0vh;
+  min-height: 0vh;
+  background-color: #00000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.s_weathes_logo{
+  width: 11vh;
+  height: 11vh;
+  background-color: #00000000;
+  background-image: url('../img/weathes_logo.png');
+  background-size: cover;
+}
+.s_weathes_text_logo{
+  background-color: #00000000;
+  font-size:8vh;
+  font-weight: 900;
+}
+.s_weathes_tag{
+  font-size: 1.4vh;
+  font-weight: 900;
+  opacity: 0%;
+  transition:all 0.5s;
+  margin-top: 0.5vh;
+}
+.back_btn i{
+  font-size: 4vh;
+}
+textarea{
+    overflow-y: hidden;
+}
