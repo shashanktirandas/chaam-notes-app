@@ -8,7 +8,7 @@ const profilePage=(data)=>{
 const getUserDetails=()=>{
     const token=localStorage.getItem("token");
     //.log(token);
-    fetch("http://localhost:3000/api/home/welcome",{
+    fetch("https://chaam-notes-app.onrender.com/api/home/welcome",{
         method:"GET",
         headers:{"Content-Type":"application/json",
             "Authorization": "Bearer "+token
@@ -88,7 +88,7 @@ const notes=()=>{
         const token=localStorage.getItem("token");
         //console.log(token);
         //console.log("delete",note.head);
-        fetch(`http://localhost:3000/api/notes/deletenote/${note._id}`,{
+        fetch(`https://chaam-notes-app.onrender.com/api/notes/deletenote/${note._id}`,{
         method:"DELETE",
         headers:{"Content-Type":"application/json",
             "Authorization": "Bearer "+token
@@ -130,7 +130,7 @@ const notes=()=>{
         const formatted =
         `${date.toLocaleString('default', { month: 'long' })} ${date.getDate()}, ${date.getFullYear()}`;
         const token=localStorage.getItem("token");
-        fetch("http://localhost:3000/api/notes/add",{
+        fetch("https://chaam-notes-app.onrender.com/api/notes/add",{
         method:"POST",
         headers:{"Content-Type":"application/json",
             "Authorization": "Bearer "+token
@@ -218,7 +218,7 @@ const getNotes=()=>{
      const formatted =
     `${date.toLocaleString('default', { month: 'long' })} ${date.getDate()}, ${date.getFullYear()}`;
      //console.log(formatted);
-    fetch("http://localhost:3000/api/notes/getusernotes",{
+    fetch("https://chaam-notes-app.onrender.com/api/notes/getusernotes",{
         method:"GET",
         headers:{"Content-Type":"application/json",
             "Authorization": "Bearer "+token
@@ -232,7 +232,7 @@ const getNotes=()=>{
                 //console.log(noteData);
                 const token=localStorage.getItem("token");
                 //console.log("clicled")
-                fetch("http://localhost:3000/api/notes/add",{
+                fetch("https://chaam-notes-app.onrender.com/api/notes/add",{
                 method:"POST",
                 headers:{"Content-Type":"application/json",
                     "Authorization": "Bearer "+token
@@ -286,7 +286,7 @@ const notesAdd=()=>{
      notes_add_btn.addEventListener("click",()=>{
          const token=localStorage.getItem("token");
         //console.log("clicled")
-        fetch("http://localhost:3000/api/notes/add",{
+        fetch("https://chaam-notes-app.onrender.com/api/notes/add",{
         method:"POST",
         headers:{"Content-Type":"application/json",
             "Authorization": "Bearer "+token

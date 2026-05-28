@@ -21,7 +21,7 @@ const otpVerify = async() => {
     }
     // const userid = JSON.parse(userDataID);
      console.log(userid);
-    const userData=await fetch(`http://localhost:3000/api/auth/get-real-user-data/${userid}`,{
+    const userData=await fetch(`https://chaam-notes-app.onrender.com/api/auth/get-real-user-data/${userid}`,{
                 method:"GET",
                 headers:{
                     "Content-Type":"application/json"
@@ -84,7 +84,7 @@ const otpVerify = async() => {
             return;
         }
 
-        const response = await fetch("http://localhost:3000/api/auth/password-change-otp",{
+        const response = await fetch("https://chaam-notes-app.onrender.com/api/auth/password-change-otp",{
                                 method:"PUT",
                                 
                                 headers: {
@@ -158,7 +158,7 @@ const otpVerify = async() => {
                     }
 
                     const response = await fetch(
-                        "http://localhost:3000/api/auth/check-password-change-otp",
+                        "https://chaam-notes-app.onrender.com/api/auth/check-password-change-otp",
                         {
                             method:"POST",
 

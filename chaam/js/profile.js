@@ -19,7 +19,7 @@ let Userdata;
 const getUserDetails=async()=>{
     const token=localStorage.getItem("token");
     //console.log(token);
-    await fetch("http://localhost:3000/api/home/welcome",{
+    await fetch("https://chaam-notes-app.onrender.com/api/home/welcome",{
         method:"GET",
         headers:{"Context-Type":"application/json",
             "Authorization": "Bearer "+token

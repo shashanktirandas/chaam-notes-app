@@ -42,7 +42,7 @@ console.log("sdfghjk")
             auth_confirm_password_dis.innerText="Confirm password must be same!"
         }else{
            const response = await fetch(
-            "http://localhost:3000/api/auth/changing-password",
+            "https://chaam-notes-app.onrender.com/api/auth/changing-password",
             {
                 method: "PUT",
 
@@ -64,7 +64,7 @@ console.log("sdfghjk")
             if(data.success){
 
                 const loginResponse = await fetch(
-                    "http://localhost:3000/api/auth/login",
+                    "https://chaam-notes-app.onrender.com/api/auth/login",
                     {
                         method: "POST",
 

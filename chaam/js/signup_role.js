@@ -12,7 +12,7 @@ const register=()=>{
             const {username,email,password}=JSON.parse(userdata);
             alert("user is registered.")
             //console.log(username,email,password,auth_role);
-            await fetch("http://localhost:3000/api/auth/registration", {
+            await fetch("https://chaam-notes-app.onrender.com/api/auth/registration", {
 
                 method: "POST",
 

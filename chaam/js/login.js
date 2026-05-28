@@ -35,7 +35,7 @@ const register=()=>{
         }else{
            // alert("user is logged in.")
             //console.log(auth_username.value,auth_password.value);
-            await fetch("http://localhost:3000/api/auth/login", {
+            await fetch("https://chaam-notes-app.onrender.com/api/auth/login", {
 
                 method: "POST",
 
@@ -68,7 +68,7 @@ const register=()=>{
                             auth_block_forgot_pwd.style.display="flex";
                             auth_block_forgot_pwd.addEventListener("click",async()=>{
                             
-                            await fetch("http://localhost:3000/api/auth/password-change-otp",{
+                            await fetch("https://chaam-notes-app.onrender.com/api/auth/password-change-otp",{
                                 method:"PUT",
                                 
                                 headers: {

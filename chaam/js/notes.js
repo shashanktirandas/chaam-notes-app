@@ -35,7 +35,7 @@ fillNotes();
 const getUserDetails=()=>{
     const token=localStorage.getItem("token");
     //console.log(token);
-    fetch("http://localhost:3000/api/home/welcome",{
+    fetch("https://chaam-notes-app.onrender.com/api/home/welcome",{
         method:"GET",
         headers:{"Content-Type":"application/json",
             "Authorization": "Bearer "+token
@@ -77,7 +77,7 @@ const updateNotes=()=>{
         const token=localStorage.getItem("token");
         //console.log(token);
         //console.log("delete",note.head);
-        fetch(`http://localhost:3000/api/notes/deletenote/${_id}`,{
+        fetch(`https://chaam-notes-app.onrender.com/api/notes/deletenote/${_id}`,{
         method:"DELETE",
         headers:{"Content-Type":"application/json",
             "Authorization": "Bearer "+token
@@ -96,7 +96,7 @@ const updateNotes=()=>{
     })
     
         }else{
-    fetch(`http://localhost:3000/api/notes/updatenote/${_id}`,{
+    fetch(`https://chaam-notes-app.onrender.com/api/notes/updatenote/${_id}`,{
         method:"PUT",
         headers:{"Content-Type":"application/json",
             "Authorization": "Bearer "+token

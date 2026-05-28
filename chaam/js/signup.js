@@ -49,7 +49,7 @@ const register=()=>{
         }else{
             //alert("user is registered.")
             //console.log(auth_username.value,auth_email.value,auth_password.value);
-            await fetch("http://localhost:3000/api/auth/check-registration", {
+            await fetch("https://chaam-notes-app.onrender.com/api/auth/check-registration", {
 
                 method: "POST",
 
